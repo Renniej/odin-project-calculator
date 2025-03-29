@@ -122,8 +122,8 @@ function addToQueue(value) {
 
 function calculateNext(_isEqualButtonPress = false) {
     try {
-        if (_isEqualButtonPress && operationQueue.length < 3) return;
-        if (!_isEqualButtonPress && operationQueue.length < 4) return;  // not enough operations to do a queue
+        if (_isEqualButtonPress && operationQueue.length < 3) return;  //if equals button was pressed and there's enough items in queue to calculate a result
+        if (!_isEqualButtonPress && operationQueue.length < 4) return;  // we should only evaluate the previous 3 items in queue if an operator is pressed.  (the 4th element is 'guarnteeded' to be an operator hence the length check)
         const firstNum = Number(operationQueue[0])
         const operator = operationQueue[1]
         const secondNum = Number(operationQueue[2])
