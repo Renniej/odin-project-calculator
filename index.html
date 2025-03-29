@@ -4,92 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"></style>
     <script src="./calculator.js"></script>
 </head>
 <body>
     <p>Keyboard is supported.</p>
-    <div class="calcHead">
-        <p id="calculatorDisplay"></p>
+    <div class="calcContainer">
+        <div class="calcHead">
+            <p id="calculatorDisplay"></p>
+        </div>
+    
+        <div class="calcBody">
+            <div>
+                <button id="resetButton">
+                    AC
+                </button>
+                <button id="invertButton">
+                    +/-
+                </button>
+                <button data-value="%" class="calcAction">
+                    %
+                </button>
+                <button data-value="/" class="calcAction">
+                    /
+                </button>
+            </div>
+    
+    
+    
+            <div>
+                <button data-value="7" class="calcAction">
+                    7
+                </button>
+                <button data-value="8" class="calcAction">
+                    8
+                </button>
+                <button data-value="9" class="calcAction">
+                    9
+                </button>
+                <button data-value="*" class="calcAction">
+                    *
+                </button>
+            </div>
+    
+            <div>
+                <button data-value="4" class="calcAction">
+                    4
+                </button>
+                <button data-value="5" class="calcAction">
+                    5
+                </button>
+                <button data-value="6" class="calcAction">
+                    6
+                </button>
+                <button data-value="-" class="calcAction">
+                    -
+                </button>
+            </div>
+    
+            <div>
+                <button data-value="1" class="calcAction">
+                    1
+                </button>
+                <button data-value="2" class="calcAction">
+                    2
+                </button>
+                <button data-value="3" class="calcAction">
+                    3
+                </button>
+                <button data-value="+" class="calcAction">
+                    +
+                </button>
+            </div>
+    
+            <div>
+                <button data-value="0" class="calcAction">
+                    0
+                </button>
+                
+                <button data-value="." class="calcAction">
+                    .
+                </button>
+    
+                <button id="equalButton">
+                    =
+                </button>
+            </div>
+         
+        </div>
     </div>
-
-    <div class="calcBody">
-        <div>
-            <button id="resetButton">
-                AC
-            </button>
-            <button id="invertButton">
-                +/-
-            </button>
-            <button data-value="%" class="calcAction">
-                %
-            </button>
-            <button data-value="/" class="calcAction">
-                /
-            </button>
-        </div>
-
-
-
-        <div>
-            <button data-value="7" class="calcAction">
-                7
-            </button>
-            <button data-value="8" class="calcAction">
-                8
-            </button>
-            <button data-value="9" class="calcAction">
-                9
-            </button>
-            <button data-value="*" class="calcAction">
-                *
-            </button>
-        </div>
-
-        <div>
-            <button data-value="4" class="calcAction">
-                4
-            </button>
-            <button data-value="5" class="calcAction">
-                5
-            </button>
-            <button data-value="6" class="calcAction">
-                6
-            </button>
-            <button data-value="-" class="calcAction">
-                -
-            </button>
-        </div>
-
-        <div>
-            <button data-value="1" class="calcAction">
-                1
-            </button>
-            <button data-value="2" class="calcAction">
-                2
-            </button>
-            <button data-value="3" class="calcAction">
-                3
-            </button>
-            <button data-value="+" class="calcAction">
-                +
-            </button>
-        </div>
-
-        <div>
-            <button data-value="0" class="calcAction">
-                0
-            </button>
-            
-            <button data-value="." class="calcAction">
-                .
-            </button>
-
-            <button id="equalButton">
-                =
-            </button>
-        </div>
-     
-    </div>
+        
 
 
 </body>
