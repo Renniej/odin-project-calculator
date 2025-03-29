@@ -12,9 +12,20 @@
     flex : 10;
 }
 
+.calcBody div {
+    display: flex;
+    flex : 1;
+}
+
+.calcBody div button {
+    display: flex;
+    flex : 1;
+}
+
 .calcHead {
     display: flex;
     padding: 5%;
     flex: 1;
-    background-color: blue;
+    background-color: rgb(150, 150, 177);
 }
+
