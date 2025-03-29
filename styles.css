@@ -1,0 +1,20 @@
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 200px;
+    height: 300px;
+}
+
+.calcBody {
+    flex-direction: column;
+    display: flex;
+    flex : 10;
+}
+
+.calcHead {
+    display: flex;
+    padding: 5%;
+    flex: 1;
+    background-color: blue;
+}
