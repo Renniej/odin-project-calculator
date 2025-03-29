@@ -20,7 +20,7 @@ window.onload = _ => {
     const calculatorButtons = Array.from(document.getElementsByClassName(CALCULATION_ACTION_CLASS))
     calculatorButtons.forEach(button => button.addEventListener("click",_ => addToQueue(button.dataset.value)))
     document.getElementById(EQUALS_BTN_ID)?.addEventListener("click", () => {
-        calculateNext()
+        calculateNext(true)
         updateDisplay()
     })
     document.getElementById(RESET_BTN_ID)?.addEventListener("click",() => resetCalculator())
@@ -120,9 +120,10 @@ function addToQueue(value) {
 }
 
 
-function calculateNext() {
+function calculateNext(_isEqualButtonPress = false) {
     try {
-        if (operationQueue.length < 4) return;  // not enough operations to do a queue
+        if (_isEqualButtonPress && operationQueue.length < 3) return;
+        if (!_isEqualButtonPress && operationQueue.length < 4) return;  // not enough operations to do a queue
         const firstNum = Number(operationQueue[0])
         const operator = operationQueue[1]
         const secondNum = Number(operationQueue[2])
